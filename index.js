@@ -6,3 +6,7 @@ function lowerCaseDrivers(array){
 function nameToAttributes(array){
   return array.map((name)=>Object.assign({},{firstName:name.split(" ")[0]},{lastName:name.split(" ")[1]}))
 }
+
+function attributesToPhrase(array){
+  return array.map((element)=>`${element.name} is from ${element.hometown}.`)
+}
